@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Neretto Sans";
+    src: url(../fontes/NerettoSans-Round.otf);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    scroll-behavior: smooth;
+}
+.pratos{
+    width: 250px;
+}
+li{
+    transition: all 0.3s ease;
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-style: none solid none solid;
+    padding: 0px 20px 0px 20px;
+    color: #3d5588;
+    text-shadow: 1px 1px black;
+    font-size: 26px;
+}
+li:hover{
+    cursor: pointer;
+    font-size: 30px;
+}
+body{
+    height: 3000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 20% 20% 20% 20% 15%;
+}
+header{
+    grid-column: 1/6;
+    height: 100px;
+    background-color: white;
+}
+footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-row: 6/7;
+    grid-column: 1/6;
+    background-color: #3d5588;
+}
+main{
+    grid-row: 2/6;
+    grid-column: 1/6;
+}
+main .quem-somos{
+    margin-top: 200px;
+}
+
+.nav-bottom{
+    background-color: #3d5588;
+    height: 59px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.nav-bottom p{
+    padding: 15px;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    animation: glow 3s infinite;
+}
+    @keyframes glow{
+        0%{
+            font-size:20px;
+        }
+        50%{
+            font-size: 22px;
+        }
+        100%{
+            font-size: 20px;
+        }
+}
+.navmenu{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.navmenu ul{
+    grid-column: 3/6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.quem-somos{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quem-somos h1{
+    font-size: 70px;
+    color: #3d5588;
+    font-family: "Neretto Sans";
+    font-weight: 400;
+}
+.quem-somos p{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #3d5588;
+}
+
+.container-info{
+    grid-column: 1/4;
+}
+.rodape{
+    grid-column: 2/3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rodape figcaption{
+    color: white;
+    font-size: 12px;
+}
+.container-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.info{
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 2px black;
+    text-align: center;
+    border-style: none inset none none;
+    line-height: 10px;
+    font-family: sans-serif;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo3.css">
+    <style>
+        body{
+            height: 1440px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navmenu">
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="logotipo">
+            </a>
+            <ul>
+                <li><a href="menu1.html">Quem Somos</a></li>
+                <li><a href="menu3.html">Preços</a></li>
+                <li><a href="menu2.html">Reserve Já</a></li>
+            </ul>
+        </div>
+        <div class="nav-bottom">
+            <p>
+                O Melhor Restaurante de Comida Italiana
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="reserva">
+            <h1 style="margin-bottom:100px;">Faça sua Reserva</h1>
+            <form action="http://www.thiagomiranda.net/formulario.php" method="post" autocomplete="off">
+                <fieldset>
+                    <legend id="form-title">Formulário de Reserva</legend>
+                    <div class="form-1" style="text-align:center;">
+                        <label for="nome">Nome Completo : </label><br>
+                        <input type="text" name="nome" placeholder="Seu Nome Completo" id="nome"><br>
+                        <label for="tel">Telefone:</label><br>
+                        <input type="tel" placeholder="+55(xx)xxxxx-xxxx" name="tel" id="tel"><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" placeholder="exemplo@gmail.com" name="email" id="email"><br>
+                        <label for="data">Data da Reserva</label><br>
+                        <input type="date" name="data" min="2022-09-22" id="data"><br>
+                        <label for="espacos">Qntd.Lugares</label><br>
+                        <label for="2">2</label>
+                        <input type="radio" name="espacos" checked id="2" value="2">
+                        <label for="3">3</label>
+                        <input type="radio" name="espacos" id="3" value="3">
+                        <label for="4">4</label>
+                        <input type="radio" name="espacos" id="4" value="4">
+                    </div>
+                    <div style="margin-top: 50px;" class="form-1">
+                        <label for="18">Horarios</label><br>
+                        <input type="radio" checked name="horario" id="18">
+                        <label for="18">18:00</label>
+                        <input type="radio" name="horario" id="20">
+                        <label for="20">20:00</label>
+                        <input type="radio" name="horario" id="22">
+                        <label for="22">22:00</label>
+                    </div>
+                </fieldset>
+                <button style="margin-top:15px ;" onclick="alert('Reservado Com sucesso')">Reservar</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container-info">
+            <div class="info">
+                <h4>Endereço</h4>
+                <br>
+                <p>R. São Vicente, 155 – Olhos D’Água
+                    Belo Horizonte/MG</p>
+                <br>
+                <p>Como Chegar</p>
+            </div>
+            <div class="info">
+                <h4>Horários</h4>
+                <br>
+                <p>TER-QUI: 18h às 23h</p>
+                <br>
+                <p>SEX: 12h às 15:30h e 18h às 23h</p>
+                <br>
+                <p>SÁB: 12h às 16:30h e 18h às 23h</p>
+                <br>
+                <p>DOM: 11:30h às 17h</p>
+            </div>
+            <div class="info">
+                <h4>
+                    Telefones
+                </h4>
+                <br>
+                <p>(31) 9 9767-5190</p>
+            </div>
+        </div>
+        <div class="rodape">
+            <figure>
+                <img src="imagens/logo-branco.png" alt="Logo">
+                <figcaption>
+                    <p>30.360.071/00001-66</p>
+                    <p>PAIXAO PELA ITALIA RESTAURANTE LTDA</p>
+                </figcaption>
+            </figure>
+        </div>
+    </footer>
+
+</body>
+
+</html>
